@@ -1,15 +1,14 @@
 //
-//  IBPreviewView.swift
+//  IBPreviewControl.swift
 //  IBPreview
 //
 //  Created by Michael Redig on 11/19/19.
 //  Copyright © 2019 Michael Redig. All rights reserved.
 //
-
 import UIKit
 
 @IBDesignable
-open class IBPreviewView: UIView, HasColor {
+open class IBPreviewControl: UIControl, HasColor {
 	private var inIB = false
 
 	@IBInspectable public var previewString: String?

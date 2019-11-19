@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33917DF023848EF700BC1501 /* IBPreviewClosures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33917DEF23848EF700BC1501 /* IBPreviewClosures.swift */; };
+		33917DF22384926100BC1501 /* IBPreviewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33917DF12384926100BC1501 /* IBPreviewControl.swift */; };
 		33952A642384562F0085558C /* IBPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33952A5A2384562F0085558C /* IBPreview.framework */; };
 		33952A692384562F0085558C /* IBPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952A682384562F0085558C /* IBPreviewTests.swift */; };
 		33952A6B2384562F0085558C /* IBPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 33952A5D2384562F0085558C /* IBPreview.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33917DEF23848EF700BC1501 /* IBPreviewClosures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBPreviewClosures.swift; sourceTree = "<group>"; };
+		33917DF12384926100BC1501 /* IBPreviewControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBPreviewControl.swift; sourceTree = "<group>"; };
 		33952A5A2384562F0085558C /* IBPreview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IBPreview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33952A5D2384562F0085558C /* IBPreview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBPreview.h; sourceTree = "<group>"; };
 		33952A5E2384562F0085558C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				33952A5D2384562F0085558C /* IBPreview.h */,
 				33952A5E2384562F0085558C /* Info.plist */,
 				33952AAF238457D20085558C /* IBPreviewView.swift */,
+				33917DF12384926100BC1501 /* IBPreviewControl.swift */,
+				33917DEF23848EF700BC1501 /* IBPreviewClosures.swift */,
 			);
 			path = IBPreview;
 			sourceTree = "<group>";
@@ -200,6 +206,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				33952AB0238457D20085558C /* IBPreviewView.swift in Sources */,
+				33917DF22384926100BC1501 /* IBPreviewControl.swift in Sources */,
+				33917DF023848EF700BC1501 /* IBPreviewClosures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
