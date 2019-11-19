@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		33952A812384564E0085558C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952A802384564E0085558C /* AppDelegate.swift */; };
-		33952A832384564E0085558C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952A822384564E0085558C /* SceneDelegate.swift */; };
 		33952A852384564E0085558C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952A842384564E0085558C /* ViewController.swift */; };
 		33952A882384564E0085558C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33952A862384564E0085558C /* Main.storyboard */; };
 		33952A8A238456510085558C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33952A89238456510085558C /* Assets.xcassets */; };
 		33952A8D238456510085558C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33952A8B238456510085558C /* LaunchScreen.storyboard */; };
 		33952A98238456510085558C /* IBPreviewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33952A97238456510085558C /* IBPreviewDemoTests.swift */; };
+		33952AAC2384572F0085558C /* IBPreview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33952AA92384570E0085558C /* IBPreview.framework */; };
+		33952AAD2384572F0085558C /* IBPreview.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33952AA92384570E0085558C /* IBPreview.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,12 +25,39 @@
 			remoteGlobalIDString = 33952A7C2384564E0085558C;
 			remoteInfo = IBPreviewDemo;
 		};
+		33952AA82384570E0085558C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33952AA32384570E0085558C /* IBPreview.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33952A5A2384562F0085558C;
+			remoteInfo = IBPreview;
+		};
+		33952AAA2384570E0085558C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33952AA32384570E0085558C /* IBPreview.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33952A632384562F0085558C;
+			remoteInfo = IBPreviewTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		33952AAE2384572F0085558C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33952AAD2384572F0085558C /* IBPreview.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		33952A7D2384564E0085558C /* IBPreviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBPreviewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33952A802384564E0085558C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		33952A822384564E0085558C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		33952A842384564E0085558C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		33952A872384564E0085558C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33952A89238456510085558C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +66,7 @@
 		33952A93238456510085558C /* IBPreviewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IBPreviewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33952A97238456510085558C /* IBPreviewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBPreviewDemoTests.swift; sourceTree = "<group>"; };
 		33952A99238456510085558C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33952AA32384570E0085558C /* IBPreview.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IBPreview.xcodeproj; path = ../IBPreview.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33952AAC2384572F0085558C /* IBPreview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +94,7 @@
 				33952A7F2384564E0085558C /* IBPreviewDemo */,
 				33952A96238456510085558C /* IBPreviewDemoTests */,
 				33952A7E2384564E0085558C /* Products */,
+				33952AA2238457090085558C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				33952A802384564E0085558C /* AppDelegate.swift */,
-				33952A822384564E0085558C /* SceneDelegate.swift */,
 				33952A842384564E0085558C /* ViewController.swift */,
 				33952A862384564E0085558C /* Main.storyboard */,
 				33952A89238456510085558C /* Assets.xcassets */,
@@ -99,6 +129,23 @@
 			path = IBPreviewDemoTests;
 			sourceTree = "<group>";
 		};
+		33952AA2238457090085558C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33952AA32384570E0085558C /* IBPreview.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33952AA42384570E0085558C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33952AA92384570E0085558C /* IBPreview.framework */,
+				33952AAB2384570E0085558C /* IBPreviewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +156,7 @@
 				33952A792384564E0085558C /* Sources */,
 				33952A7A2384564E0085558C /* Frameworks */,
 				33952A7B2384564E0085558C /* Resources */,
+				33952AAE2384572F0085558C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +215,12 @@
 			mainGroup = 33952A742384564E0085558C;
 			productRefGroup = 33952A7E2384564E0085558C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 33952AA42384570E0085558C /* Products */;
+					ProjectRef = 33952AA32384570E0085558C /* IBPreview.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				33952A7C2384564E0085558C /* IBPreviewDemo */,
@@ -174,6 +228,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		33952AA92384570E0085558C /* IBPreview.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IBPreview.framework;
+			remoteRef = 33952AA82384570E0085558C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		33952AAB2384570E0085558C /* IBPreviewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IBPreviewTests.xctest;
+			remoteRef = 33952AAA2384570E0085558C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		33952A7B2384564E0085558C /* Resources */ = {
@@ -202,7 +273,6 @@
 			files = (
 				33952A852384564E0085558C /* ViewController.swift in Sources */,
 				33952A812384564E0085558C /* AppDelegate.swift in Sources */,
-				33952A832384564E0085558C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5UZAT7KA9;
 				INFOPLIST_FILE = IBPreviewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5UZAT7KA9;
 				INFOPLIST_FILE = IBPreviewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
