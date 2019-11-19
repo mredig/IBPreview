@@ -14,7 +14,6 @@ open class IBPreviewView: UIView {
 
 	override public func prepareForInterfaceBuilder() {
 		inIB = true
-		draw(bounds)
 	}
 
 	#if DEBUG
