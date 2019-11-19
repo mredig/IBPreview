@@ -29,6 +29,7 @@ open class IBPreviewView: UIView {
 		let topRight = CGPoint(x: bounds.maxX, y: 0)
 		let botLeft = CGPoint(x: 0, y: bounds.maxY)
 		let botRight = CGPoint(x: bounds.maxX, y: bounds.maxY)
+		context.setStrokeColor(color.withAlphaComponent(0.35).cgColor)
 		context.strokeLineSegments(between: [topLeft, botRight])
 		context.strokeLineSegments(between: [botLeft, topRight])
 
