@@ -12,6 +12,8 @@ import UIKit
 open class IBPreviewView: UIView {
 	private var inIB = false
 
+	@IBInspectable public var previewString: String?
+
 	override public func prepareForInterfaceBuilder() {
 		inIB = true
 	}
@@ -30,7 +32,7 @@ open class IBPreviewView: UIView {
 		context.strokeLineSegments(between: [topLeft, botRight])
 		context.strokeLineSegments(between: [botLeft, topRight])
 
-		let text: NSString = String(describing: type(of: self)) as NSString
+		let text: NSString = (previewString ?? String(describing: type(of: self))) as NSString
 		let font = UIFont.systemFont(ofSize: 14, weight: .medium)
 		let textAttributes: [NSAttributedString.Key : Any] = [
 			NSAttributedString.Key.foregroundColor: color,
