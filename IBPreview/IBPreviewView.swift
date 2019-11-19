@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class IBPreviewView: UIView {
+open class IBPreviewView: UIView {
 	private var inIB = false
 
 	override public func prepareForInterfaceBuilder() {
