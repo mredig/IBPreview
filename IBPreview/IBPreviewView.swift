@@ -10,18 +10,19 @@ import UIKit
 
 @IBDesignable
 open class IBPreviewView: UIView, HasColor {
-	private var inIB = false
+	private var _isInterfaceBuilder = false
+	public var isInterfaceBuilder: Bool { _isInterfaceBuilder }
 
 	@IBInspectable public var previewString: String?
 
 	override public func prepareForInterfaceBuilder() {
-		inIB = true
+		_isInterfaceBuilder = true
 	}
 
 	#if DEBUG
 	override public func draw(_ rect: CGRect) {
 		let myPreviewString: NSString = previewString as NSString? ?? String(describing: type(of: self)) as NSString
-		IBPreviewClosures.drawClosure(inIB, rect, self, myPreviewString)
+		IBPreviewClosures.drawClosure(isInterfaceBuilder, rect, self, myPreviewString)
 	}
 	#endif
 }

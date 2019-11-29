@@ -9,6 +9,7 @@
 import UIKit
 
 protocol HasColor: AnyObject {
+	var isInterfaceBuilder: Bool { get }
 	var backgroundColor: UIColor? { get }
 	func getColor() -> UIColor
 }
