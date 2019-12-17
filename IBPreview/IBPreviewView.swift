@@ -10,14 +10,15 @@ import UIKit
 
 @IBDesignable
 open class IBPreviewView: UIView, HasColor {
-	private var _isInterfaceBuilder = false
-	public var isInterfaceBuilder: Bool { _isInterfaceBuilder }
+	public let isInterfaceBuilder: Bool = {
+		#if TARGET_INTERFACE_BUILDER
+		return true
+		#else
+		return false
+		#endif
+	}()
 
 	@IBInspectable public var previewString: String?
-
-	override public func prepareForInterfaceBuilder() {
-		_isInterfaceBuilder = true
-	}
 
 	#if DEBUG
 	override public func draw(_ rect: CGRect) {
