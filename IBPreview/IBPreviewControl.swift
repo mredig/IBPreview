@@ -9,14 +9,15 @@ import UIKit
 
 @IBDesignable
 open class IBPreviewControl: UIControl, HasColor {
-	private var _isInterfaceBuilder = false
-	public var isInterfaceBuilder: Bool { _isInterfaceBuilder }
+	public let isInterfaceBuilder: Bool = {
+		#if TARGET_INTERFACE_BUILDER
+		return true
+		#else
+		return false
+		#endif
+	}()
 
 	@IBInspectable public var previewString: String?
-
-	override public func prepareForInterfaceBuilder() {
-		_isInterfaceBuilder = true
-	}
 
 	/// A list of all subviews that forward their actions through this PreviewControl
 	public private(set) var actionForwardingSubviews: Set<UIControl> = []
